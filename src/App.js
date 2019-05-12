@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import CardList from './CardList'
-import SearchBox from './SearchBox'
-import {robots} from './robots'
+import CardList from './CardList' //card component
+import SearchBox from './SearchBox' //search box component
+import {robots} from './robots' // destructring - robot object
 
 class App extends Component {
 
     constructor() {
-        super()
+        super() //The super keyword is used to access and call functions on an object's parent.
         this.state = {
             robots: robots,
             searchfield: ''
@@ -21,6 +21,7 @@ class App extends Component {
         })
     }
 
+    //This renders on the page
     render() {
         return (
             <div className="tc">
